@@ -1,0 +1,2721 @@
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+###  http://example.org/temNome
+ex:temNome rdf:type owl:DatatypeProperty ;
+          rdfs:domain ex:Atleta ;
+          rdfs:range xsd:string .
+
+###  http://example.org/temModalidade
+ex:temModalidade rdf:type owl:DatatypeProperty ;
+          rdfs:domain ex:Atleta ;
+          rdfs:range xsd:string .
+
+###  http://example.org/temResultado
+ex:temResultado rdf:type owl:DatatypeProperty ;
+          rdfs:domain ex:Atleta ;
+          rdfs:range xsd:string .
+
+ex:Emily_Terrell rdf:type ex:Atleta ;
+    ex:temNome "Emily Terrell"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Medina_Hartman rdf:type ex:Atleta ;
+    ex:temNome "Medina Hartman"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Andrews_Rivas rdf:type ex:Atleta ;
+    ex:temNome "Andrews Rivas"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Marcella_Combs rdf:type ex:Atleta ;
+    ex:temNome "Marcella Combs"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Mendoza_Buckner rdf:type ex:Atleta ;
+    ex:temNome "Mendoza Buckner"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Sellers_Copeland rdf:type ex:Atleta ;
+    ex:temNome "Sellers Copeland"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Bernard_Stokes rdf:type ex:Atleta ;
+    ex:temNome "Bernard Stokes"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Alfreda_Raymond rdf:type ex:Atleta ;
+    ex:temNome "Alfreda Raymond"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Alston_Green rdf:type ex:Atleta ;
+    ex:temNome "Alston Green"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Paige_Mccarthy rdf:type ex:Atleta ;
+    ex:temNome "Paige Mccarthy"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Claudine_Gill rdf:type ex:Atleta ;
+    ex:temNome "Claudine Gill"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Summer_Calhoun rdf:type ex:Atleta ;
+    ex:temNome "Summer Calhoun"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Slater_David rdf:type ex:Atleta ;
+    ex:temNome "Slater David"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Ophelia_Boyd rdf:type ex:Atleta ;
+    ex:temNome "Ophelia Boyd"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Evans_Singleton rdf:type ex:Atleta ;
+    ex:temNome "Evans Singleton"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Church_Bishop rdf:type ex:Atleta ;
+    ex:temNome "Church Bishop"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Woodard_Bennett rdf:type ex:Atleta ;
+    ex:temNome "Woodard Bennett"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Vasquez_Michael rdf:type ex:Atleta ;
+    ex:temNome "Vasquez Michael"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Holloway_Maxwell rdf:type ex:Atleta ;
+    ex:temNome "Holloway Maxwell"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Michele_Barber rdf:type ex:Atleta ;
+    ex:temNome "Michele Barber"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Chambers_Burton rdf:type ex:Atleta ;
+    ex:temNome "Chambers Burton"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Massey_Goodman rdf:type ex:Atleta ;
+    ex:temNome "Massey Goodman"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Klein_Cameron rdf:type ex:Atleta ;
+    ex:temNome "Klein Cameron"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lambert_Mueller rdf:type ex:Atleta ;
+    ex:temNome "Lambert Mueller"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Ewing_Drake rdf:type ex:Atleta ;
+    ex:temNome "Ewing Drake"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lester_Manning rdf:type ex:Atleta ;
+    ex:temNome "Lester Manning"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Nina_Fowler rdf:type ex:Atleta ;
+    ex:temNome "Nina Fowler"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lynn_Shaw rdf:type ex:Atleta ;
+    ex:temNome "Lynn Shaw"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Betty_Blake rdf:type ex:Atleta ;
+    ex:temNome "Betty Blake"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Oneill_Roth rdf:type ex:Atleta ;
+    ex:temNome "Oneill Roth"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Roxanne_Miles rdf:type ex:Atleta ;
+    ex:temNome "Roxanne Miles"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Cecelia_Adams rdf:type ex:Atleta ;
+    ex:temNome "Cecelia Adams"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Irma_Jacobs rdf:type ex:Atleta ;
+    ex:temNome "Irma Jacobs"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Angelia_Noel rdf:type ex:Atleta ;
+    ex:temNome "Angelia Noel"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sallie_Shaffer rdf:type ex:Atleta ;
+    ex:temNome "Sallie Shaffer"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Jordan_Bonner rdf:type ex:Atleta ;
+    ex:temNome "Jordan Bonner"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Bartlett_Sexton rdf:type ex:Atleta ;
+    ex:temNome "Bartlett Sexton"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Opal_Stewart rdf:type ex:Atleta ;
+    ex:temNome "Opal Stewart"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Ola_Glover rdf:type ex:Atleta ;
+    ex:temNome "Ola Glover"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Shelia_York rdf:type ex:Atleta ;
+    ex:temNome "Shelia York"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Raquel_Ratliff rdf:type ex:Atleta ;
+    ex:temNome "Raquel Ratliff"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Burke_Weeks rdf:type ex:Atleta ;
+    ex:temNome "Burke Weeks"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Best_French rdf:type ex:Atleta ;
+    ex:temNome "Best French"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Fowler_Alvarez rdf:type ex:Atleta ;
+    ex:temNome "Fowler Alvarez"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Terri_Avila rdf:type ex:Atleta ;
+    ex:temNome "Terri Avila"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Alford_Small rdf:type ex:Atleta ;
+    ex:temNome "Alford Small"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Key_Arnold rdf:type ex:Atleta ;
+    ex:temNome "Key Arnold"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Nguyen_Diaz rdf:type ex:Atleta ;
+    ex:temNome "Nguyen Diaz"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sherry_Morales rdf:type ex:Atleta ;
+    ex:temNome "Sherry Morales"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Crane_Ballard rdf:type ex:Atleta ;
+    ex:temNome "Crane Ballard"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Terry_Chaney rdf:type ex:Atleta ;
+    ex:temNome "Terry Chaney"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sheppard_Bryant rdf:type ex:Atleta ;
+    ex:temNome "Sheppard Bryant"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Janis_Mckinney rdf:type ex:Atleta ;
+    ex:temNome "Janis Mckinney"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Sue_Waters rdf:type ex:Atleta ;
+    ex:temNome "Sue Waters"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Cynthia_Page rdf:type ex:Atleta ;
+    ex:temNome "Cynthia Page"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Montgomery_Rhodes rdf:type ex:Atleta ;
+    ex:temNome "Montgomery Rhodes"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Claire_Joyce rdf:type ex:Atleta ;
+    ex:temNome "Claire Joyce"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Evangelina_Key rdf:type ex:Atleta ;
+    ex:temNome "Evangelina Key"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Effie_Gibson rdf:type ex:Atleta ;
+    ex:temNome "Effie Gibson"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Maureen_Cobb rdf:type ex:Atleta ;
+    ex:temNome "Maureen Cobb"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Dee_Holman rdf:type ex:Atleta ;
+    ex:temNome "Dee Holman"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Larson_Morin rdf:type ex:Atleta ;
+    ex:temNome "Larson Morin"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Ursula_Martinez rdf:type ex:Atleta ;
+    ex:temNome "Ursula Martinez"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:English_Clemons rdf:type ex:Atleta ;
+    ex:temNome "English Clemons"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Stella_Jackson rdf:type ex:Atleta ;
+    ex:temNome "Stella Jackson"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Haley_Joseph rdf:type ex:Atleta ;
+    ex:temNome "Haley Joseph"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Kelsey_Roberts rdf:type ex:Atleta ;
+    ex:temNome "Kelsey Roberts"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Watson_Lynch rdf:type ex:Atleta ;
+    ex:temNome "Watson Lynch"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Chasity_Coffey rdf:type ex:Atleta ;
+    ex:temNome "Chasity Coffey"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Paula_Delaney rdf:type ex:Atleta ;
+    ex:temNome "Paula Delaney"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Galloway_Sanders rdf:type ex:Atleta ;
+    ex:temNome "Galloway Sanders"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Tina_Blankenship rdf:type ex:Atleta ;
+    ex:temNome "Tina Blankenship"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Whitehead_Montgomery rdf:type ex:Atleta ;
+    ex:temNome "Whitehead Montgomery"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Dominguez_Chambers rdf:type ex:Atleta ;
+    ex:temNome "Dominguez Chambers"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Booth_Eaton rdf:type ex:Atleta ;
+    ex:temNome "Booth Eaton"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Joanna_Grant rdf:type ex:Atleta ;
+    ex:temNome "Joanna Grant"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Jeri_Pearson rdf:type ex:Atleta ;
+    ex:temNome "Jeri Pearson"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sanchez_Mcgee rdf:type ex:Atleta ;
+    ex:temNome "Sanchez Mcgee"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Magdalena_Francis rdf:type ex:Atleta ;
+    ex:temNome "Magdalena Francis"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Morris_Poole rdf:type ex:Atleta ;
+    ex:temNome "Morris Poole"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Rodriguez_Gonzalez rdf:type ex:Atleta ;
+    ex:temNome "Rodriguez Gonzalez"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Christine_Rice rdf:type ex:Atleta ;
+    ex:temNome "Christine Rice"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Valdez_Harper rdf:type ex:Atleta ;
+    ex:temNome "Valdez Harper"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Berta_Clay rdf:type ex:Atleta ;
+    ex:temNome "Berta Clay"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Bonnie_Sandoval rdf:type ex:Atleta ;
+    ex:temNome "Bonnie Sandoval"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Stein_Wiggins rdf:type ex:Atleta ;
+    ex:temNome "Stein Wiggins"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Tanya_Mcclain rdf:type ex:Atleta ;
+    ex:temNome "Tanya Mcclain"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Perry_Sanford rdf:type ex:Atleta ;
+    ex:temNome "Perry Sanford"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Maxine_Rutledge rdf:type ex:Atleta ;
+    ex:temNome "Maxine Rutledge"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Tucker_Morse rdf:type ex:Atleta ;
+    ex:temNome "Tucker Morse"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Thelma_Schmidt rdf:type ex:Atleta ;
+    ex:temNome "Thelma Schmidt"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Charles_Kim rdf:type ex:Atleta ;
+    ex:temNome "Charles Kim"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Duncan_Davidson rdf:type ex:Atleta ;
+    ex:temNome "Duncan Davidson"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Gertrude_Dillon rdf:type ex:Atleta ;
+    ex:temNome "Gertrude Dillon"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Brennan_Santana rdf:type ex:Atleta ;
+    ex:temNome "Brennan Santana"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Ball_Barlow rdf:type ex:Atleta ;
+    ex:temNome "Ball Barlow"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Oneil_Baxter rdf:type ex:Atleta ;
+    ex:temNome "Oneil Baxter"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Helena_Mayo rdf:type ex:Atleta ;
+    ex:temNome "Helena Mayo"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Martin_Brewer rdf:type ex:Atleta ;
+    ex:temNome "Martin Brewer"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Wilder_Greene rdf:type ex:Atleta ;
+    ex:temNome "Wilder Greene"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Harrison_Finch rdf:type ex:Atleta ;
+    ex:temNome "Harrison Finch"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Jordan_Alvarez rdf:type ex:Atleta ;
+    ex:temNome "Jordan Alvarez"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lane_Norton rdf:type ex:Atleta ;
+    ex:temNome "Lane Norton"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Carrillo_Munoz rdf:type ex:Atleta ;
+    ex:temNome "Carrillo Munoz"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Barrett_Frederick rdf:type ex:Atleta ;
+    ex:temNome "Barrett Frederick"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Harmon_Stone rdf:type ex:Atleta ;
+    ex:temNome "Harmon Stone"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Chandra_Potts rdf:type ex:Atleta ;
+    ex:temNome "Chandra Potts"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:John_Warner rdf:type ex:Atleta ;
+    ex:temNome "John Warner"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Casey_Bowman rdf:type ex:Atleta ;
+    ex:temNome "Casey Bowman"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Mccullough_Pena rdf:type ex:Atleta ;
+    ex:temNome "Mccullough Pena"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Brianna_Bentley rdf:type ex:Atleta ;
+    ex:temNome "Brianna Bentley"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Nixon_Hendrix rdf:type ex:Atleta ;
+    ex:temNome "Nixon Hendrix"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Buckner_Luna rdf:type ex:Atleta ;
+    ex:temNome "Buckner Luna"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Britt_Zamora rdf:type ex:Atleta ;
+    ex:temNome "Britt Zamora"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hendrix_Bauer rdf:type ex:Atleta ;
+    ex:temNome "Hendrix Bauer"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Travis_Sampson rdf:type ex:Atleta ;
+    ex:temNome "Travis Sampson"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Darla_Ware rdf:type ex:Atleta ;
+    ex:temNome "Darla Ware"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Peters_Vaughn rdf:type ex:Atleta ;
+    ex:temNome "Peters Vaughn"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lawrence_Herman rdf:type ex:Atleta ;
+    ex:temNome "Lawrence Herman"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Chang_Oneill rdf:type ex:Atleta ;
+    ex:temNome "Chang Oneill"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Patrick_Mcintyre rdf:type ex:Atleta ;
+    ex:temNome "Patrick Mcintyre"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Joyce_Evans rdf:type ex:Atleta ;
+    ex:temNome "Joyce Evans"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Larsen_Villarreal rdf:type ex:Atleta ;
+    ex:temNome "Larsen Villarreal"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Morrow_Yang rdf:type ex:Atleta ;
+    ex:temNome "Morrow Yang"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Dunn_Horn rdf:type ex:Atleta ;
+    ex:temNome "Dunn Horn"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Viola_Medina rdf:type ex:Atleta ;
+    ex:temNome "Viola Medina"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Valdez_Barnes rdf:type ex:Atleta ;
+    ex:temNome "Valdez Barnes"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sweet_Gibbs rdf:type ex:Atleta ;
+    ex:temNome "Sweet Gibbs"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Addie_Hayes rdf:type ex:Atleta ;
+    ex:temNome "Addie Hayes"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:May_Holt rdf:type ex:Atleta ;
+    ex:temNome "May Holt"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Christensen_Boyd rdf:type ex:Atleta ;
+    ex:temNome "Christensen Boyd"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Workman_Franks rdf:type ex:Atleta ;
+    ex:temNome "Workman Franks"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Lucile_Underwood rdf:type ex:Atleta ;
+    ex:temNome "Lucile Underwood"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Heath_Bishop rdf:type ex:Atleta ;
+    ex:temNome "Heath Bishop"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Rosales_Mejia rdf:type ex:Atleta ;
+    ex:temNome "Rosales Mejia"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Ray_Howe rdf:type ex:Atleta ;
+    ex:temNome "Ray Howe"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Suarez_Campbell rdf:type ex:Atleta ;
+    ex:temNome "Suarez Campbell"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Shaffer_Le rdf:type ex:Atleta ;
+    ex:temNome "Shaffer Le"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Justine_Wise rdf:type ex:Atleta ;
+    ex:temNome "Justine Wise"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Villarreal_Tucker rdf:type ex:Atleta ;
+    ex:temNome "Villarreal Tucker"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Monica_Neal rdf:type ex:Atleta ;
+    ex:temNome "Monica Neal"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Lloyd_Dotson rdf:type ex:Atleta ;
+    ex:temNome "Lloyd Dotson"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mccray_Barker rdf:type ex:Atleta ;
+    ex:temNome "Mccray Barker"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Sellers_Hunter rdf:type ex:Atleta ;
+    ex:temNome "Sellers Hunter"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Cathryn_Fletcher rdf:type ex:Atleta ;
+    ex:temNome "Cathryn Fletcher"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Dee_Lowery rdf:type ex:Atleta ;
+    ex:temNome "Dee Lowery"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Freeman_Wyatt rdf:type ex:Atleta ;
+    ex:temNome "Freeman Wyatt"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Guy_Drake rdf:type ex:Atleta ;
+    ex:temNome "Guy Drake"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mendez_Good rdf:type ex:Atleta ;
+    ex:temNome "Mendez Good"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Burnett_Hogan rdf:type ex:Atleta ;
+    ex:temNome "Burnett Hogan"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Jamie_Cherry rdf:type ex:Atleta ;
+    ex:temNome "Jamie Cherry"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Bird_Noble rdf:type ex:Atleta ;
+    ex:temNome "Bird Noble"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Burgess_Bradshaw rdf:type ex:Atleta ;
+    ex:temNome "Burgess Bradshaw"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Laura_Jacobson rdf:type ex:Atleta ;
+    ex:temNome "Laura Jacobson"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Blair_Sherman rdf:type ex:Atleta ;
+    ex:temNome "Blair Sherman"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Bobbi_Hawkins rdf:type ex:Atleta ;
+    ex:temNome "Bobbi Hawkins"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Montoya_Anthony rdf:type ex:Atleta ;
+    ex:temNome "Montoya Anthony"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hooper_Kirby rdf:type ex:Atleta ;
+    ex:temNome "Hooper Kirby"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Wolfe_Baird rdf:type ex:Atleta ;
+    ex:temNome "Wolfe Baird"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lamb_Graham rdf:type ex:Atleta ;
+    ex:temNome "Lamb Graham"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Valentine_Fitzgerald rdf:type ex:Atleta ;
+    ex:temNome "Valentine Fitzgerald"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Herminia_Mooney rdf:type ex:Atleta ;
+    ex:temNome "Herminia Mooney"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Golden_Hopkins rdf:type ex:Atleta ;
+    ex:temNome "Golden Hopkins"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Lancaster_Andrews rdf:type ex:Atleta ;
+    ex:temNome "Lancaster Andrews"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Elena_Sullivan rdf:type ex:Atleta ;
+    ex:temNome "Elena Sullivan"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Deana_Ramsey rdf:type ex:Atleta ;
+    ex:temNome "Deana Ramsey"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Mayra_Rose rdf:type ex:Atleta ;
+    ex:temNome "Mayra Rose"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Tina_Salinas rdf:type ex:Atleta ;
+    ex:temNome "Tina Salinas"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sheila_Caldwell rdf:type ex:Atleta ;
+    ex:temNome "Sheila Caldwell"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hudson_Duffy rdf:type ex:Atleta ;
+    ex:temNome "Hudson Duffy"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Guzman_Douglas rdf:type ex:Atleta ;
+    ex:temNome "Guzman Douglas"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Ethel_Bartlett rdf:type ex:Atleta ;
+    ex:temNome "Ethel Bartlett"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Doyle_Odom rdf:type ex:Atleta ;
+    ex:temNome "Doyle Odom"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Araceli_Castaneda rdf:type ex:Atleta ;
+    ex:temNome "Araceli Castaneda"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Fuentes_Walker rdf:type ex:Atleta ;
+    ex:temNome "Fuentes Walker"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Sarah_Moore rdf:type ex:Atleta ;
+    ex:temNome "Sarah Moore"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Cheryl_Watson rdf:type ex:Atleta ;
+    ex:temNome "Cheryl Watson"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Langley_Velez rdf:type ex:Atleta ;
+    ex:temNome "Langley Velez"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Alisa_Morrison rdf:type ex:Atleta ;
+    ex:temNome "Alisa Morrison"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Malinda_Merritt rdf:type ex:Atleta ;
+    ex:temNome "Malinda Merritt"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lenora_Kane rdf:type ex:Atleta ;
+    ex:temNome "Lenora Kane"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Cabrera_Curtis rdf:type ex:Atleta ;
+    ex:temNome "Cabrera Curtis"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Roseann_Benjamin rdf:type ex:Atleta ;
+    ex:temNome "Roseann Benjamin"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Stafford_Ray rdf:type ex:Atleta ;
+    ex:temNome "Stafford Ray"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Jewel_Trevino rdf:type ex:Atleta ;
+    ex:temNome "Jewel Trevino"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mckenzie_Woods rdf:type ex:Atleta ;
+    ex:temNome "Mckenzie Woods"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Jean_Conley rdf:type ex:Atleta ;
+    ex:temNome "Jean Conley"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Conway_Alexander rdf:type ex:Atleta ;
+    ex:temNome "Conway Alexander"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Maryann_Joyce rdf:type ex:Atleta ;
+    ex:temNome "Maryann Joyce"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Ayers_Carroll rdf:type ex:Atleta ;
+    ex:temNome "Ayers Carroll"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Bonita_Mccormick rdf:type ex:Atleta ;
+    ex:temNome "Bonita Mccormick"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Kathy_Kramer rdf:type ex:Atleta ;
+    ex:temNome "Kathy Kramer"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Tonia_Bryan rdf:type ex:Atleta ;
+    ex:temNome "Tonia Bryan"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Barker_Mercer rdf:type ex:Atleta ;
+    ex:temNome "Barker Mercer"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mcfarland_Tyson rdf:type ex:Atleta ;
+    ex:temNome "Mcfarland Tyson"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Meagan_Carter rdf:type ex:Atleta ;
+    ex:temNome "Meagan Carter"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Catalina_Webb rdf:type ex:Atleta ;
+    ex:temNome "Catalina Webb"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Moses_Sargent rdf:type ex:Atleta ;
+    ex:temNome "Moses Sargent"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Preston_Mccall rdf:type ex:Atleta ;
+    ex:temNome "Preston Mccall"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Christian_Clements rdf:type ex:Atleta ;
+    ex:temNome "Christian Clements"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Jeanine_Hester rdf:type ex:Atleta ;
+    ex:temNome "Jeanine Hester"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Tonia_Espinoza rdf:type ex:Atleta ;
+    ex:temNome "Tonia Espinoza"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Alyssa_Howard rdf:type ex:Atleta ;
+    ex:temNome "Alyssa Howard"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Merrill_Fulton rdf:type ex:Atleta ;
+    ex:temNome "Merrill Fulton"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Jaime_Erickson rdf:type ex:Atleta ;
+    ex:temNome "Jaime Erickson"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Felicia_Skinner rdf:type ex:Atleta ;
+    ex:temNome "Felicia Skinner"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Margaret_Bray rdf:type ex:Atleta ;
+    ex:temNome "Margaret Bray"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Etta_Cotton rdf:type ex:Atleta ;
+    ex:temNome "Etta Cotton"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Kelley_Davidson rdf:type ex:Atleta ;
+    ex:temNome "Kelley Davidson"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Crawford_Merritt rdf:type ex:Atleta ;
+    ex:temNome "Crawford Merritt"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Kim_Buck rdf:type ex:Atleta ;
+    ex:temNome "Kim Buck"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Gilda_Schmidt rdf:type ex:Atleta ;
+    ex:temNome "Gilda Schmidt"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Mcintosh_Aguirre rdf:type ex:Atleta ;
+    ex:temNome "Mcintosh Aguirre"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Ida_Bradshaw rdf:type ex:Atleta ;
+    ex:temNome "Ida Bradshaw"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Jefferson_Pacheco rdf:type ex:Atleta ;
+    ex:temNome "Jefferson Pacheco"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Olson_Hickman rdf:type ex:Atleta ;
+    ex:temNome "Olson Hickman"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Malinda_Mccall rdf:type ex:Atleta ;
+    ex:temNome "Malinda Mccall"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Raquel_Dejesus rdf:type ex:Atleta ;
+    ex:temNome "Raquel Dejesus"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Daniel_Chambers rdf:type ex:Atleta ;
+    ex:temNome "Daniel Chambers"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Samantha_Sharp rdf:type ex:Atleta ;
+    ex:temNome "Samantha Sharp"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Robert_Herman rdf:type ex:Atleta ;
+    ex:temNome "Robert Herman"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Olive_Chapman rdf:type ex:Atleta ;
+    ex:temNome "Olive Chapman"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mccoy_Blackburn rdf:type ex:Atleta ;
+    ex:temNome "Mccoy Blackburn"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Lambert_Ferrell rdf:type ex:Atleta ;
+    ex:temNome "Lambert Ferrell"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Small_Coffey rdf:type ex:Atleta ;
+    ex:temNome "Small Coffey"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hicks_Daniels rdf:type ex:Atleta ;
+    ex:temNome "Hicks Daniels"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Meghan_Cabrera rdf:type ex:Atleta ;
+    ex:temNome "Meghan Cabrera"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hubbard_Hart rdf:type ex:Atleta ;
+    ex:temNome "Hubbard Hart"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Chelsea_Gallegos rdf:type ex:Atleta ;
+    ex:temNome "Chelsea Gallegos"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Natalie_Figueroa rdf:type ex:Atleta ;
+    ex:temNome "Natalie Figueroa"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hayes_Ward rdf:type ex:Atleta ;
+    ex:temNome "Hayes Ward"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Graves_Mccray rdf:type ex:Atleta ;
+    ex:temNome "Graves Mccray"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mavis_Riley rdf:type ex:Atleta ;
+    ex:temNome "Mavis Riley"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Salas_Joseph rdf:type ex:Atleta ;
+    ex:temNome "Salas Joseph"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Carly_Peck rdf:type ex:Atleta ;
+    ex:temNome "Carly Peck"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Ramirez_Blevins rdf:type ex:Atleta ;
+    ex:temNome "Ramirez Blevins"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Parks_Saunders rdf:type ex:Atleta ;
+    ex:temNome "Parks Saunders"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Leanne_Armstrong rdf:type ex:Atleta ;
+    ex:temNome "Leanne Armstrong"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Kline_Stark rdf:type ex:Atleta ;
+    ex:temNome "Kline Stark"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Elliott_Guzman rdf:type ex:Atleta ;
+    ex:temNome "Elliott Guzman"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Liz_Baldwin rdf:type ex:Atleta ;
+    ex:temNome "Liz Baldwin"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Warner_Bullock rdf:type ex:Atleta ;
+    ex:temNome "Warner Bullock"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Santana_Harper rdf:type ex:Atleta ;
+    ex:temNome "Santana Harper"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Imelda_Odonnell rdf:type ex:Atleta ;
+    ex:temNome "Imelda Odonnell"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Lila_Curry rdf:type ex:Atleta ;
+    ex:temNome "Lila Curry"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Milagros_Ellis rdf:type ex:Atleta ;
+    ex:temNome "Milagros Ellis"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Stafford_Hale rdf:type ex:Atleta ;
+    ex:temNome "Stafford Hale"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Blevins_Cline rdf:type ex:Atleta ;
+    ex:temNome "Blevins Cline"^^xsd:string ;
+    ex:temModalidade "Triatlo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Triatlo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Marisol_Owen rdf:type ex:Atleta ;
+    ex:temNome "Marisol Owen"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Mcintyre_Walsh rdf:type ex:Atleta ;
+    ex:temNome "Mcintyre Walsh"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Valarie_Silva rdf:type ex:Atleta ;
+    ex:temNome "Valarie Silva"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Jimmie_Beck rdf:type ex:Atleta ;
+    ex:temNome "Jimmie Beck"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Amparo_Price rdf:type ex:Atleta ;
+    ex:temNome "Amparo Price"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Susanna_Lowery rdf:type ex:Atleta ;
+    ex:temNome "Susanna Lowery"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Flynn_Huber rdf:type ex:Atleta ;
+    ex:temNome "Flynn Huber"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Elaine_Allen rdf:type ex:Atleta ;
+    ex:temNome "Elaine Allen"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Gwen_Pate rdf:type ex:Atleta ;
+    ex:temNome "Gwen Pate"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Leila_Solis rdf:type ex:Atleta ;
+    ex:temNome "Leila Solis"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mercedes_Heath rdf:type ex:Atleta ;
+    ex:temNome "Mercedes Heath"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Althea_Fitzpatrick rdf:type ex:Atleta ;
+    ex:temNome "Althea Fitzpatrick"^^xsd:string ;
+    ex:temModalidade "Basquetebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Basquetebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Arlene_Morton rdf:type ex:Atleta ;
+    ex:temNome "Arlene Morton"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Mosley_Gonzales rdf:type ex:Atleta ;
+    ex:temNome "Mosley Gonzales"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Torres_Hardy rdf:type ex:Atleta ;
+    ex:temNome "Torres Hardy"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Annmarie_Petersen rdf:type ex:Atleta ;
+    ex:temNome "Annmarie Petersen"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Osborn_Green rdf:type ex:Atleta ;
+    ex:temNome "Osborn Green"^^xsd:string ;
+    ex:temModalidade "Karaté"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Karaté rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Davenport_Dominguez rdf:type ex:Atleta ;
+    ex:temNome "Davenport Dominguez"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Barton_Massey rdf:type ex:Atleta ;
+    ex:temNome "Barton Massey"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Holly_Bowen rdf:type ex:Atleta ;
+    ex:temNome "Holly Bowen"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Dennis_Crawford rdf:type ex:Atleta ;
+    ex:temNome "Dennis Crawford"^^xsd:string ;
+    ex:temModalidade "Atletismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Atletismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Oliver_Mcleod rdf:type ex:Atleta ;
+    ex:temNome "Oliver Mcleod"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Tameka_Orr rdf:type ex:Atleta ;
+    ex:temNome "Tameka Orr"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Foster_Strickland rdf:type ex:Atleta ;
+    ex:temNome "Foster Strickland"^^xsd:string ;
+    ex:temModalidade "Patinagem"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Patinagem rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Marlene_Rodgers rdf:type ex:Atleta ;
+    ex:temNome "Marlene Rodgers"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Shari_Mathews rdf:type ex:Atleta ;
+    ex:temNome "Shari Mathews"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Josie_Rasmussen rdf:type ex:Atleta ;
+    ex:temNome "Josie Rasmussen"^^xsd:string ;
+    ex:temModalidade "Badminton"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Badminton rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Shelton_Walton rdf:type ex:Atleta ;
+    ex:temNome "Shelton Walton"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Odonnell_Russell rdf:type ex:Atleta ;
+    ex:temNome "Odonnell Russell"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Elba_Le rdf:type ex:Atleta ;
+    ex:temNome "Elba Le"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Sweet_Woodward rdf:type ex:Atleta ;
+    ex:temNome "Sweet Woodward"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Wilkins_Cummings rdf:type ex:Atleta ;
+    ex:temNome "Wilkins Cummings"^^xsd:string ;
+    ex:temModalidade "Dança"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Dança rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Rogers_Noel rdf:type ex:Atleta ;
+    ex:temNome "Rogers Noel"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Hodges_Ashley rdf:type ex:Atleta ;
+    ex:temNome "Hodges Ashley"^^xsd:string ;
+    ex:temModalidade "Andebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Andebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Curtis_Dillon rdf:type ex:Atleta ;
+    ex:temNome "Curtis Dillon"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Lelia_Oliver rdf:type ex:Atleta ;
+    ex:temNome "Lelia Oliver"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Fuentes_Rogers rdf:type ex:Atleta ;
+    ex:temNome "Fuentes Rogers"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Carole_Lindsey rdf:type ex:Atleta ;
+    ex:temNome "Carole Lindsey"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Martinez_Johns rdf:type ex:Atleta ;
+    ex:temNome "Martinez Johns"^^xsd:string ;
+    ex:temModalidade "SUP"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:SUP rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Kellie_Holland rdf:type ex:Atleta ;
+    ex:temNome "Kellie Holland"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Mathis_Kirk rdf:type ex:Atleta ;
+    ex:temNome "Mathis Kirk"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Bertha_Shelton rdf:type ex:Atleta ;
+    ex:temNome "Bertha Shelton"^^xsd:string ;
+    ex:temModalidade "Orientação"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Orientação rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Bonnie_Diaz rdf:type ex:Atleta ;
+    ex:temNome "Bonnie Diaz"^^xsd:string ;
+    ex:temModalidade "Ténis"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Ténis rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Becker_Talley rdf:type ex:Atleta ;
+    ex:temNome "Becker Talley"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Zelma_Bell rdf:type ex:Atleta ;
+    ex:temNome "Zelma Bell"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Stanton_Cox rdf:type ex:Atleta ;
+    ex:temNome "Stanton Cox"^^xsd:string ;
+    ex:temModalidade "BTT"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:BTT rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Cindy_Shepherd rdf:type ex:Atleta ;
+    ex:temNome "Cindy Shepherd"^^xsd:string ;
+    ex:temModalidade "Ciclismo"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Ciclismo rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Knapp_Buckner rdf:type ex:Atleta ;
+    ex:temNome "Knapp Buckner"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Callahan_Mitchell rdf:type ex:Atleta ;
+    ex:temNome "Callahan Mitchell"^^xsd:string ;
+    ex:temModalidade "Parapente"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Parapente rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Allie_Lyons rdf:type ex:Atleta ;
+    ex:temNome "Allie Lyons"^^xsd:string ;
+    ex:temModalidade "Equitação"^^xsd:string ;
+    ex:temResultado "NaoSaudavel"^^xsd:string .
+
+ex:Equitação rdf:type ex:Modalidade .
+
+ex:NaoSaudavel rdf:type ex:Resultado .
+
+ex:Tammy_Bryant rdf:type ex:Atleta ;
+    ex:temNome "Tammy Bryant"^^xsd:string ;
+    ex:temModalidade "Futebol"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Futebol rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
+ex:Carissa_Rosario rdf:type ex:Atleta ;
+    ex:temNome "Carissa Rosario"^^xsd:string ;
+    ex:temModalidade "Esgrima"^^xsd:string ;
+    ex:temResultado "Saudavel"^^xsd:string .
+
+ex:Esgrima rdf:type ex:Modalidade .
+
+ex:Saudavel rdf:type ex:Resultado .
+
