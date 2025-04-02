@@ -1,0 +1,243 @@
+@prefix : <http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#> .
+
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Ajuda
+:Ajuda rdf:type owl:ObjectProperty ;
+       owl:inverseOf :eAjudado .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Cria
+:Cria rdf:type owl:ObjectProperty ;
+      owl:inverseOf :eCriadoPor .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Cultiva
+:Cultiva rdf:type owl:ObjectProperty ;
+         owl:inverseOf :eCultivadoPor .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Reside
+:Reside rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#TrabalhaPara
+:TrabalhaPara rdf:type owl:ObjectProperty ;
+              owl:inverseOf :temTrabalhador .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#eAjudado
+:eAjudado rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#eCasado
+:eCasado rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#eCriadoPor
+:eCriadoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#eCultivadoPor
+:eCultivadoPor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#eVizinho
+:eVizinho rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#temTrabalhador
+:temTrabalhador rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#temValor
+:temValor rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Nao_Domestico ;
+          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Fruta>
+                                                                                                      <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa>
+                                                                                                    )
+                                                                                      ] ;
+                                                                          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Animal
+:Animal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Domestico
+:Domestico rdf:type owl:Class ;
+           rdfs:subClassOf :Animal .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Nao_Domestico
+:Nao_Domestico rdf:type owl:Class ;
+               rdfs:subClassOf :Animal .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Trabalhador_Temp
+:Trabalhador_Temp rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Vegetal
+:Vegetal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Agricultor
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Agricultor> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Fruta
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Fruta> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Localidade
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Localidade> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Vila
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Vila> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Localidade> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Alface
+:Alface rdf:type owl:NamedIndividual ,
+                 :Vegetal ;
+        :eCultivadoPor :Carlos .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Carlos
+:Carlos rdf:type owl:NamedIndividual ,
+                 <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Agricultor> .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Cenoura
+:Cenoura rdf:type owl:NamedIndividual ,
+                  :Vegetal ;
+         :eCultivadoPor :Carlos .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Galinha
+:Galinha rdf:type owl:NamedIndividual ,
+                  :Nao_Domestico ;
+         :eCriadoPor <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> ;
+         :temValor 4 .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Porco
+:Porco rdf:type owl:NamedIndividual ,
+                :Nao_Domestico ;
+       :eCriadoPor <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> ;
+       :temValor 12 .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Rex
+:Rex rdf:type owl:NamedIndividual ,
+              :Domestico .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Tomate
+:Tomate rdf:type owl:NamedIndividual ,
+                 :Vegetal ;
+        :eCultivadoPor :Carlos .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Trabalhador1
+:Trabalhador1 rdf:type owl:NamedIndividual ,
+                       :Trabalhador_Temp ;
+              :TrabalhaPara <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Trabalhador2
+:Trabalhador2 rdf:type owl:NamedIndividual ,
+                       :Trabalhador_Temp ;
+              :TrabalhaPara <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#Vaca
+:Vaca rdf:type owl:NamedIndividual ,
+               :Nao_Domestico ;
+      :eCriadoPor <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> ;
+      :temValor 10 .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Ana
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Ana> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> ;
+                                                                      <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "Ana" .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Banana
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Banana> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Fruta> ;
+                                                                         :eCultivadoPor <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> ;
+                                                                         <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "Banana" .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Agricultor> ,
+                                                                                <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> ;
+                                                                       <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "João" .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Laranja
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Laranja> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Fruta> ;
+                                                                          :eCultivadoPor <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> ;
+                                                                          <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "Laranja" .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Maria
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Maria> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> ;
+                                                                        <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "Maria" .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Maçã
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Maçã> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Fruta> ;
+                                                                       :eCultivadoPor <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#João> ;
+                                                                       <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "Maçã" .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pedro
+<http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pedro> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#Pessoa> ;
+                                                                        <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#temNome> "Pedro" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
