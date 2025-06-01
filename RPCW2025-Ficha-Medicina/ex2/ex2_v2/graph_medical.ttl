@@ -1,0 +1,753 @@
+@prefix : <http://www.example.org/disease-ontology#> .
+@prefix ns1: <http://rpcw.di.uminho.pt/2024/medical#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:AIDS a ns1:Disease ;
+    ns1:hasSymptom ns1:extra_marital_contacts,
+        ns1:high_fever,
+        ns1:muscle_wasting,
+        ns1:patches_in_throat .
+
+ns1:Acne a ns1:Disease ;
+    ns1:hasSymptom ns1:blackheads,
+        ns1:pus_filled_pimples,
+        ns1:scurring,
+        ns1:skin_rash .
+
+ns1:Alcoholic_hepatitis a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:distention_of_abdomen,
+        ns1:fluid_overload,
+        ns1:history_of_alcohol_consumption,
+        ns1:swelling_of_stomach,
+        ns1:vomiting,
+        ns1:yellowish_skin .
+
+ns1:Allergy a ns1:Disease ;
+    ns1:hasSymptom ns1:chills,
+        ns1:continuous_sneezing,
+        ns1:shivering,
+        ns1:watering_from_eyes .
+
+ns1:Arthritis a ns1:Disease ;
+    ns1:hasSymptom ns1:movement_stiffness,
+        ns1:muscle_weakness,
+        ns1:painful_walking,
+        ns1:stiff_neck,
+        ns1:swelling_joints .
+
+ns1:Bronchial_Asthma a ns1:Disease ;
+    ns1:hasSymptom ns1:breathlessness,
+        ns1:cough,
+        ns1:family_history,
+        ns1:fatigue,
+        ns1:high_fever,
+        ns1:mucoid_sputum .
+
+ns1:Cervical_spondylosis a ns1:Disease ;
+    ns1:hasSymptom ns1:back_pain,
+        ns1:dizziness,
+        ns1:loss_of_balance,
+        ns1:neck_pain,
+        ns1:weakness_in_limbs .
+
+ns1:Chicken_pox a ns1:Disease ;
+    ns1:hasSymptom ns1:fatigue,
+        ns1:headache,
+        ns1:high_fever,
+        ns1:itching,
+        ns1:lethargy,
+        ns1:loss_of_appetite,
+        ns1:malaise,
+        ns1:mild_fever,
+        ns1:red_spots_over_body,
+        ns1:skin_rash,
+        ns1:swelled_lymph_nodes .
+
+ns1:Chronic_cholestasis a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:itching,
+        ns1:loss_of_appetite,
+        ns1:nausea,
+        ns1:vomiting,
+        ns1:yellowing_of_eyes,
+        ns1:yellowish_skin .
+
+ns1:Common_Cold a ns1:Disease ;
+    ns1:hasSymptom ns1:chest_pain,
+        ns1:chills,
+        ns1:congestion,
+        ns1:continuous_sneezing,
+        ns1:cough,
+        ns1:fatigue,
+        ns1:headache,
+        ns1:high_fever,
+        ns1:loss_of_smell,
+        ns1:malaise,
+        ns1:muscle_pain,
+        ns1:phlegm,
+        ns1:redness_of_eyes,
+        ns1:runny_nose,
+        ns1:sinus_pressure,
+        ns1:swelled_lymph_nodes,
+        ns1:throat_irritation .
+
+ns1:Dengue a ns1:Disease ;
+    ns1:hasSymptom ns1:back_pain,
+        ns1:chills,
+        ns1:fatigue,
+        ns1:headache,
+        ns1:high_fever,
+        ns1:joint_pain,
+        ns1:loss_of_appetite,
+        ns1:malaise,
+        ns1:muscle_pain,
+        ns1:nausea,
+        ns1:pain_behind_the_eyes,
+        ns1:red_spots_over_body,
+        ns1:skin_rash,
+        ns1:vomiting .
+
+ns1:Diabetes_ a ns1:Disease ;
+    ns1:hasSymptom ns1:blurred_and_distorted_vision,
+        ns1:excessive_hunger,
+        ns1:fatigue,
+        ns1:increased_appetite,
+        ns1:irregular_sugar_level,
+        ns1:lethargy,
+        ns1:obesity,
+        ns1:polyuria,
+        ns1:restlessness,
+        ns1:weight_loss .
+
+ns1:Dimorphic_hemmorhoids_piles_ a ns1:Disease ;
+    ns1:hasSymptom ns1:bloody_stool,
+        ns1:constipation,
+        ns1:irritation_in_anus,
+        ns1:pain_during_bowel_movements,
+        ns1:pain_in_anal_region .
+
+ns1:Drug_Reaction a ns1:Disease ;
+    ns1:hasSymptom ns1:burning_micturition,
+        ns1:itching,
+        ns1:skin_rash,
+        ns1:spotting__urination,
+        ns1:stomach_pain .
+
+ns1:Fungal_infection a ns1:Disease ;
+    ns1:hasSymptom ns1:dischromic__patches,
+        ns1:itching,
+        ns1:nodal_skin_eruptions,
+        ns1:skin_rash .
+
+ns1:GERD a ns1:Disease ;
+    ns1:hasSymptom ns1:acidity,
+        ns1:chest_pain,
+        ns1:cough,
+        ns1:stomach_pain,
+        ns1:ulcers_on_tongue,
+        ns1:vomiting .
+
+ns1:Gastroenteritis a ns1:Disease ;
+    ns1:hasSymptom ns1:dehydration,
+        ns1:diarrhoea,
+        ns1:sunken_eyes,
+        ns1:vomiting .
+
+ns1:Heart_attack a ns1:Disease ;
+    ns1:hasSymptom ns1:breathlessness,
+        ns1:chest_pain,
+        ns1:sweating,
+        ns1:vomiting .
+
+ns1:Hepatitis_B a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:dark_urine,
+        ns1:fatigue,
+        ns1:itching,
+        ns1:lethargy,
+        ns1:loss_of_appetite,
+        ns1:malaise,
+        ns1:receiving_blood_transfusion,
+        ns1:receiving_unsterile_injections,
+        ns1:yellow_urine,
+        ns1:yellowing_of_eyes,
+        ns1:yellowish_skin .
+
+ns1:Hepatitis_C a ns1:Disease ;
+    ns1:hasSymptom ns1:family_history,
+        ns1:fatigue,
+        ns1:loss_of_appetite,
+        ns1:nausea,
+        ns1:yellowing_of_eyes,
+        ns1:yellowish_skin .
+
+ns1:Hepatitis_D a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:dark_urine,
+        ns1:fatigue,
+        ns1:joint_pain,
+        ns1:loss_of_appetite,
+        ns1:nausea,
+        ns1:vomiting,
+        ns1:yellowing_of_eyes,
+        ns1:yellowish_skin .
+
+ns1:Hepatitis_E a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:acute_liver_failure,
+        ns1:coma,
+        ns1:dark_urine,
+        ns1:fatigue,
+        ns1:high_fever,
+        ns1:joint_pain,
+        ns1:loss_of_appetite,
+        ns1:nausea,
+        ns1:stomach_bleeding,
+        ns1:vomiting,
+        ns1:yellowing_of_eyes,
+        ns1:yellowish_skin .
+
+ns1:Hypertension_ a ns1:Disease ;
+    ns1:hasSymptom ns1:chest_pain,
+        ns1:dizziness,
+        ns1:headache,
+        ns1:lack_of_concentration,
+        ns1:loss_of_balance .
+
+ns1:Hyperthyroidism a ns1:Disease ;
+    ns1:hasSymptom ns1:abnormal_menstruation,
+        ns1:diarrhoea,
+        ns1:excessive_hunger,
+        ns1:fast_heart_rate,
+        ns1:fatigue,
+        ns1:irritability,
+        ns1:mood_swings,
+        ns1:muscle_weakness,
+        ns1:restlessness,
+        ns1:sweating,
+        ns1:weight_loss .
+
+ns1:Hypoglycemia a ns1:Disease ;
+    ns1:hasSymptom ns1:anxiety,
+        ns1:blurred_and_distorted_vision,
+        ns1:drying_and_tingling_lips,
+        ns1:excessive_hunger,
+        ns1:fatigue,
+        ns1:headache,
+        ns1:irritability,
+        ns1:nausea,
+        ns1:palpitations,
+        ns1:slurred_speech,
+        ns1:sweating,
+        ns1:vomiting .
+
+ns1:Hypothyroidism a ns1:Disease ;
+    ns1:hasSymptom ns1:abnormal_menstruation,
+        ns1:brittle_nails,
+        ns1:cold_hands_and_feets,
+        ns1:depression,
+        ns1:dizziness,
+        ns1:enlarged_thyroid,
+        ns1:fatigue,
+        ns1:irritability,
+        ns1:lethargy,
+        ns1:mood_swings,
+        ns1:puffy_face_and_eyes,
+        ns1:swollen_extremeties,
+        ns1:weight_gain .
+
+ns1:Impetigo a ns1:Disease ;
+    ns1:hasSymptom ns1:blister,
+        ns1:high_fever,
+        ns1:red_sore_around_nose,
+        ns1:skin_rash,
+        ns1:yellow_crust_ooze .
+
+ns1:Jaundice a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:dark_urine,
+        ns1:fatigue,
+        ns1:high_fever,
+        ns1:itching,
+        ns1:vomiting,
+        ns1:weight_loss,
+        ns1:yellowish_skin .
+
+ns1:Malaria a ns1:Disease ;
+    ns1:hasSymptom ns1:chills,
+        ns1:diarrhoea,
+        ns1:headache,
+        ns1:high_fever,
+        ns1:muscle_pain,
+        ns1:nausea,
+        ns1:sweating,
+        ns1:vomiting .
+
+ns1:Migraine a ns1:Disease ;
+    ns1:hasSymptom ns1:acidity,
+        ns1:blurred_and_distorted_vision,
+        ns1:depression,
+        ns1:excessive_hunger,
+        ns1:headache,
+        ns1:indigestion,
+        ns1:irritability,
+        ns1:stiff_neck,
+        ns1:visual_disturbances .
+
+ns1:Osteoarthristis a ns1:Disease ;
+    ns1:hasSymptom ns1:hip_joint_pain,
+        ns1:joint_pain,
+        ns1:knee_pain,
+        ns1:neck_pain,
+        ns1:painful_walking,
+        ns1:swelling_joints .
+
+ns1:Paralysis__brain_hemorrhage_ a ns1:Disease ;
+    ns1:hasSymptom ns1:altered_sensorium,
+        ns1:headache,
+        ns1:vomiting,
+        ns1:weakness_of_one_body_side .
+
+ns1:Peptic_ulcer_diseae a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:indigestion,
+        ns1:internal_itching,
+        ns1:loss_of_appetite,
+        ns1:passage_of_gases,
+        ns1:vomiting .
+
+ns1:Pneumonia a ns1:Disease ;
+    ns1:hasSymptom ns1:breathlessness,
+        ns1:chest_pain,
+        ns1:chills,
+        ns1:cough,
+        ns1:fast_heart_rate,
+        ns1:fatigue,
+        ns1:high_fever,
+        ns1:malaise,
+        ns1:phlegm,
+        ns1:rusty_sputum,
+        ns1:sweating .
+
+ns1:Psoriasis a ns1:Disease ;
+    ns1:hasSymptom ns1:inflammatory_nails,
+        ns1:joint_pain,
+        ns1:silver_like_dusting,
+        ns1:skin_peeling,
+        ns1:skin_rash,
+        ns1:small_dents_in_nails .
+
+ns1:Tuberculosis a ns1:Disease ;
+    ns1:hasSymptom ns1:blood_in_sputum,
+        ns1:breathlessness,
+        ns1:chest_pain,
+        ns1:chills,
+        ns1:cough,
+        ns1:fatigue,
+        ns1:high_fever,
+        ns1:loss_of_appetite,
+        ns1:malaise,
+        ns1:mild_fever,
+        ns1:phlegm,
+        ns1:sweating,
+        ns1:swelled_lymph_nodes,
+        ns1:vomiting,
+        ns1:weight_loss,
+        ns1:yellowing_of_eyes .
+
+ns1:Typhoid a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:belly_pain,
+        ns1:chills,
+        ns1:constipation,
+        ns1:diarrhoea,
+        ns1:fatigue,
+        ns1:headache,
+        ns1:high_fever,
+        ns1:nausea,
+        ns1:toxic_look__typhos_,
+        ns1:vomiting .
+
+ns1:Urinary_tract_infection a ns1:Disease ;
+    ns1:hasSymptom ns1:bladder_discomfort,
+        ns1:burning_micturition,
+        ns1:continuous_feel_of_urine,
+        ns1:foul_smell_of_urine .
+
+ns1:Varicose_veins a ns1:Disease ;
+    ns1:hasSymptom ns1:bruising,
+        ns1:cramps,
+        ns1:fatigue,
+        ns1:obesity,
+        ns1:prominent_veins_on_calf,
+        ns1:swollen_blood_vessels,
+        ns1:swollen_legs .
+
+ns1:_vertigo__Paroymsal__Positional_Vertigo a ns1:Disease ;
+    ns1:hasSymptom ns1:headache,
+        ns1:loss_of_balance,
+        ns1:nausea,
+        ns1:spinning_movements,
+        ns1:unsteadiness,
+        ns1:vomiting .
+
+ns1:hepatitis_A a ns1:Disease ;
+    ns1:hasSymptom ns1:abdominal_pain,
+        ns1:dark_urine,
+        ns1:diarrhoea,
+        ns1:joint_pain,
+        ns1:loss_of_appetite,
+        ns1:mild_fever,
+        ns1:muscle_pain,
+        ns1:nausea,
+        ns1:vomiting,
+        ns1:yellowing_of_eyes,
+        ns1:yellowish_skin .
+
+:Diabetes a :Disease ;
+    :hasSymptom :Fatigue,
+        :FrequentUrination,
+        :IncreasedThirst ;
+    :hasTreatment :DietModification,
+        :Exercise,
+        :InsulinTherapy .
+
+:Flu a :Disease ;
+    :hasSymptom :Cough,
+        :Fever,
+        :SoreThroat ;
+    :hasTreatment :AntiviralDrugs,
+        :Hydration,
+        :Rest .
+
+:Ontology a owl:Ontology .
+
+:Patient1 a :Patient ;
+    :exhibitsSymptom :Cough,
+        :Fever,
+        :SoreThroat ;
+    :name "Paul Harrods" .
+
+:Patient2 a :Patient ;
+    :exhibitsSymptom :Fatigue,
+        :FrequentUrination,
+        :IncreasedThirst ;
+    :name "Ana Montana" .
+
+:exhibitsSymptom a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Symptom .
+
+:hasDisease a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Disease .
+
+:hasSymptom a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Symptom .
+
+:hasTreatment a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Treatment .
+
+:receivesTreatment a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Treatment .
+
+ns1:acute_liver_failure a ns1:Symptom .
+
+ns1:altered_sensorium a ns1:Symptom .
+
+ns1:anxiety a ns1:Symptom .
+
+ns1:belly_pain a ns1:Symptom .
+
+ns1:blackheads a ns1:Symptom .
+
+ns1:bladder_discomfort a ns1:Symptom .
+
+ns1:blister a ns1:Symptom .
+
+ns1:blood_in_sputum a ns1:Symptom .
+
+ns1:bloody_stool a ns1:Symptom .
+
+ns1:brittle_nails a ns1:Symptom .
+
+ns1:bruising a ns1:Symptom .
+
+ns1:cold_hands_and_feets a ns1:Symptom .
+
+ns1:coma a ns1:Symptom .
+
+ns1:congestion a ns1:Symptom .
+
+ns1:continuous_feel_of_urine a ns1:Symptom .
+
+ns1:cramps a ns1:Symptom .
+
+ns1:dehydration a ns1:Symptom .
+
+ns1:dischromic__patches a ns1:Symptom .
+
+ns1:distention_of_abdomen a ns1:Symptom .
+
+ns1:drying_and_tingling_lips a ns1:Symptom .
+
+ns1:enlarged_thyroid a ns1:Symptom .
+
+ns1:extra_marital_contacts a ns1:Symptom .
+
+ns1:fluid_overload a ns1:Symptom .
+
+ns1:foul_smell_of_urine a ns1:Symptom .
+
+ns1:hip_joint_pain a ns1:Symptom .
+
+ns1:history_of_alcohol_consumption a ns1:Symptom .
+
+ns1:increased_appetite a ns1:Symptom .
+
+ns1:inflammatory_nails a ns1:Symptom .
+
+ns1:internal_itching a ns1:Symptom .
+
+ns1:irregular_sugar_level a ns1:Symptom .
+
+ns1:irritation_in_anus a ns1:Symptom .
+
+ns1:knee_pain a ns1:Symptom .
+
+ns1:lack_of_concentration a ns1:Symptom .
+
+ns1:loss_of_smell a ns1:Symptom .
+
+ns1:movement_stiffness a ns1:Symptom .
+
+ns1:mucoid_sputum a ns1:Symptom .
+
+ns1:muscle_wasting a ns1:Symptom .
+
+ns1:nodal_skin_eruptions a ns1:Symptom .
+
+ns1:pain_behind_the_eyes a ns1:Symptom .
+
+ns1:pain_during_bowel_movements a ns1:Symptom .
+
+ns1:pain_in_anal_region a ns1:Symptom .
+
+ns1:palpitations a ns1:Symptom .
+
+ns1:passage_of_gases a ns1:Symptom .
+
+ns1:patches_in_throat a ns1:Symptom .
+
+ns1:polyuria a ns1:Symptom .
+
+ns1:prominent_veins_on_calf a ns1:Symptom .
+
+ns1:puffy_face_and_eyes a ns1:Symptom .
+
+ns1:pus_filled_pimples a ns1:Symptom .
+
+ns1:receiving_blood_transfusion a ns1:Symptom .
+
+ns1:receiving_unsterile_injections a ns1:Symptom .
+
+ns1:red_sore_around_nose a ns1:Symptom .
+
+ns1:redness_of_eyes a ns1:Symptom .
+
+ns1:runny_nose a ns1:Symptom .
+
+ns1:rusty_sputum a ns1:Symptom .
+
+ns1:scurring a ns1:Symptom .
+
+ns1:shivering a ns1:Symptom .
+
+ns1:silver_like_dusting a ns1:Symptom .
+
+ns1:sinus_pressure a ns1:Symptom .
+
+ns1:skin_peeling a ns1:Symptom .
+
+ns1:slurred_speech a ns1:Symptom .
+
+ns1:small_dents_in_nails a ns1:Symptom .
+
+ns1:spinning_movements a ns1:Symptom .
+
+ns1:spotting__urination a ns1:Symptom .
+
+ns1:stomach_bleeding a ns1:Symptom .
+
+ns1:sunken_eyes a ns1:Symptom .
+
+ns1:swelling_of_stomach a ns1:Symptom .
+
+ns1:swollen_blood_vessels a ns1:Symptom .
+
+ns1:swollen_extremeties a ns1:Symptom .
+
+ns1:swollen_legs a ns1:Symptom .
+
+ns1:throat_irritation a ns1:Symptom .
+
+ns1:toxic_look__typhos_ a ns1:Symptom .
+
+ns1:ulcers_on_tongue a ns1:Symptom .
+
+ns1:unsteadiness a ns1:Symptom .
+
+ns1:visual_disturbances a ns1:Symptom .
+
+ns1:watering_from_eyes a ns1:Symptom .
+
+ns1:weakness_in_limbs a ns1:Symptom .
+
+ns1:weakness_of_one_body_side a ns1:Symptom .
+
+ns1:weight_gain a ns1:Symptom .
+
+ns1:yellow_crust_ooze a ns1:Symptom .
+
+ns1:yellow_urine a ns1:Symptom .
+
+:AntiviralDrugs a :Treatment .
+
+:DietModification a :Treatment .
+
+:Exercise a :Treatment .
+
+:Hydration a :Treatment .
+
+:InsulinTherapy a :Treatment .
+
+:Rest a :Treatment .
+
+ns1:abnormal_menstruation a ns1:Symptom .
+
+ns1:acidity a ns1:Symptom .
+
+ns1:back_pain a ns1:Symptom .
+
+ns1:burning_micturition a ns1:Symptom .
+
+ns1:constipation a ns1:Symptom .
+
+ns1:continuous_sneezing a ns1:Symptom .
+
+ns1:depression a ns1:Symptom .
+
+ns1:family_history a ns1:Symptom .
+
+ns1:fast_heart_rate a ns1:Symptom .
+
+ns1:indigestion a ns1:Symptom .
+
+ns1:mood_swings a ns1:Symptom .
+
+ns1:muscle_weakness a ns1:Symptom .
+
+ns1:neck_pain a ns1:Symptom .
+
+ns1:obesity a ns1:Symptom .
+
+ns1:painful_walking a ns1:Symptom .
+
+ns1:red_spots_over_body a ns1:Symptom .
+
+ns1:restlessness a ns1:Symptom .
+
+ns1:stiff_neck a ns1:Symptom .
+
+ns1:stomach_pain a ns1:Symptom .
+
+ns1:swelling_joints a ns1:Symptom .
+
+:Cough a :Symptom .
+
+:Fatigue a :Symptom .
+
+:Fever a :Symptom .
+
+:FrequentUrination a :Symptom .
+
+:IncreasedThirst a :Symptom .
+
+:SoreThroat a :Symptom .
+
+ns1:blurred_and_distorted_vision a ns1:Symptom .
+
+ns1:dizziness a ns1:Symptom .
+
+ns1:loss_of_balance a ns1:Symptom .
+
+ns1:mild_fever a ns1:Symptom .
+
+ns1:phlegm a ns1:Symptom .
+
+ns1:swelled_lymph_nodes a ns1:Symptom .
+
+ns1:breathlessness a ns1:Symptom .
+
+ns1:excessive_hunger a ns1:Symptom .
+
+ns1:irritability a ns1:Symptom .
+
+ns1:lethargy a ns1:Symptom .
+
+ns1:muscle_pain a ns1:Symptom .
+
+ns1:weight_loss a ns1:Symptom .
+
+ns1:cough a ns1:Symptom .
+
+ns1:dark_urine a ns1:Symptom .
+
+ns1:diarrhoea a ns1:Symptom .
+
+:Disease a owl:Class .
+
+:Patient a owl:Class .
+
+ns1:chest_pain a ns1:Symptom .
+
+ns1:itching a ns1:Symptom .
+
+ns1:joint_pain a ns1:Symptom .
+
+ns1:malaise a ns1:Symptom .
+
+ns1:sweating a ns1:Symptom .
+
+ns1:chills a ns1:Symptom .
+
+ns1:skin_rash a ns1:Symptom .
+
+ns1:yellowing_of_eyes a ns1:Symptom .
+
+ns1:yellowish_skin a ns1:Symptom .
+
+:Symptom a owl:Class .
+
+:Treatment a owl:Class .
+
+ns1:abdominal_pain a ns1:Symptom .
+
+ns1:headache a ns1:Symptom .
+
+ns1:loss_of_appetite a ns1:Symptom .
+
+ns1:nausea a ns1:Symptom .
+
+ns1:high_fever a ns1:Symptom .
+
+ns1:fatigue a ns1:Symptom .
+
+ns1:vomiting a ns1:Symptom .
+
+

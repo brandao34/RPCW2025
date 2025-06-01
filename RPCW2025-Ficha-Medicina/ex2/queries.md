@@ -10,7 +10,7 @@ SELECT (COUNT(DISTINCT ?class) AS ?count) WHERE {
 }
 
 ```
-R:43 
+R:43  
 
 ## Que doenças estão associadas ao sintoma "yellowish_skin"? 
 

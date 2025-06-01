@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bem-vindo ao Quiz do Mundial</title>
+    <style>
+        body {
+            background: #FFD966;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .quiz-container {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            max-width: 425px;
+            margin: 60px auto;
+            padding: 32px 32px 24px 32px;
+            text-align: center;
+        }
+        .quiz-header {
+            margin-bottom: 24px;
+        }
+        .quiz-header .icon {
+            font-size: 40px;
+            color: #E53935;
+            margin-bottom: 8px;
+        }
+        .quiz-header h1 {
+            font-size: 1.5em;
+            margin: 0 0 8px 0;
+        }
+        .quiz-header h2 {
+            font-size: 1.1em;
+            color: #555;
+            margin: 0 0 16px 0;
+        }
+        .modo-option {
+            display: flex;
+            align-items: center;
+            background: #F3F4F6;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 12px 18px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+            font-size: 1.1em;
+            font-weight: 500;
+            justify-content: left;
+        }
+        .modo-option.selected {
+            border: 2px solid #3B82F6;
+            background: #E0E7FF;
+        }
+        .modo-label {
+            margin-left: 0;
+        }
+        .quiz-btn {
+            margin-top: 24px;
+            background: #3B82F6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 32px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .quiz-btn:hover {
+            background: #2563EB;
+        }
+        /* Esconde o radio */
+        input[type="radio"] {
+            display: none;
+        }
+        /* Mostra um círculo customizado */
+        .custom-radio {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #bbb;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border 0.2s;
+        }
+        .modo-option.selected .custom-radio {
+            border: 2px solid #3B82F6;
+            background: #3B82F6;
+        }
+        .dot {
+            display: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #fff;
+        }
+        .modo-option.selected .dot {
+            display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const options = document.querySelectorAll('.modo-option');
+            options.forEach(opt => {
+                opt.addEventListener('click', function() {
+                    options.forEach(o => o.classList.remove('selected'));
+                    this.classList.add('selected');
+                    this.querySelector('input[type="radio"]').checked = true;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="icon">🏆</div>
+            <h1>BEM VINDO AO QUIZ DO MUNDIAL</h1>
+            <h2>Escolha o modo de jogo:</h2>
+        </div>
+        <form action="{{ url_for('temas') }}" method="get">
+            <label class="modo-option">
+                <span class="custom-radio"><span class="dot"></span></span>
+                <input type="radio" name="modo" value="facil" required>
+                <span class="modo-label">
+                    Fácil
+                    {% if 'facil' in modos_concluidos %} 🏆{% endif %}
+                </span>
+            </label>
+            <label class="modo-option">
+                <span class="custom-radio"><span class="dot"></span></span>
+                <input type="radio" name="modo" value="mediano">
+                <span class="modo-label">
+                    Mediano
+                    {% if 'mediano' in modos_concluidos %} 🏆{% endif %}
+                </span>
+            </label>
+            <label class="modo-option">
+                <span class="custom-radio"><span class="dot"></span></span>
+                <input type="radio" name="modo" value="expert">
+                <span class="modo-label">
+                    Expert
+                    {% if 'expert' in modos_concluidos %} 🏆{% endif %}
+                </span>
+            </label>
+            <label class="modo-option">
+                <span class="custom-radio"><span class="dot"></span></span>
+                <input type="radio" name="modo" value="morte_subita">
+                <span class="modo-label">
+                    Morte Súbita
+                    {% if 'morte_subita' in modos_concluidos %} 🏆{% endif %}
+                </span>
+            </label>
+            <button class="quiz-btn" type="submit">Escolher Temas</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Quiz do Mundial{% endblock %}</title>
+    <style>
+        body {
+            background: #FFD966;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .quiz-container {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            max-width: 900px ; 
+            margin: 60px auto;
+            padding: 32px 32px 24px 32px;
+            text-align: center;
+        }
+        .quiz-header {
+            margin-bottom: 24px;
+        }
+        .quiz-header .icon {
+            font-size: 40px;
+            color: #E53935;
+            margin-bottom: 8px;
+        }
+        .quiz-header h1 {
+            font-size: 1.5em;
+            margin: 0 0 8px 0;
+        }
+        .quiz-header h2 {
+            font-size: 1.1em;
+            color: #555;
+            margin: 0 0 16px 0;
+        }
+        .quiz-btn {
+            margin-top: 24px;
+            background: #3B82F6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 32px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .quiz-btn:hover {
+            background: #2563EB;
+        }
+        /* Adicione aqui outros estilos globais */
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div class="quiz-container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

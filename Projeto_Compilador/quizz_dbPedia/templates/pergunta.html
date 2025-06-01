@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %}Pergunta - Quiz do Mundial{% endblock %}
+
+{% block extra_css %}
+<style>
+    .question-mark {
+        font-size: 112.5px; /* 90 * 1.25 */
+        color: #003049;
+        text-shadow: 0 0 30px #ffb703, 0 0 10px #ffb703;
+        margin-bottom: 0;
+        margin-top: 12.5px; /* 10 * 1.25 */
+    }
+    .question-text {
+        font-size: 1.625em; /* 1.3 * 1.25 */
+        color: #22223b;
+        margin: 22.5px 0 40px 0; /* 18, 0, 32, 0 * 1.25 */
+        font-weight: 600;
+    }
+    .options-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22.5px; /* 18 * 1.25 */
+        margin-top: 22.5px;
+        margin-bottom: 22.5px;
+        justify-items: stretch;
+    }
+    .option-btn, .option-radio-label {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-radius: 37.5px; /* 30 * 1.25 */
+        box-shadow: 0 2.5px 10px rgba(0,0,0,0.07); /* 2,8 * 1.25 */
+        border: none;
+        font-size: 1.375em; /* 1.1 * 1.25 */
+        font-weight: 500;
+        color: #003049;
+        min-width: 0;
+        margin: 0;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        height: 60px; /* 48 * 1.25 */
+        padding: 0 0 0 0;
+        justify-content: flex-start;
+    }
+    .option-radio-label.selected, .option-btn:hover {
+        background: #e0e7ff;
+        box-shadow: 0 5px 20px #ffb70355; /* 4,16 * 1.25 */
+    }
+    .option-label {
+        background: #003049;
+        color: #fff;
+        border-radius: 37.5px 0 0 37.5px; /* 30 * 1.25 */
+        width: 55px; /* 44 * 1.25 */
+        height: 60px; /* 48 * 1.25 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.375em; /* 1.1 * 1.25 */
+        margin-right: 12.5px; /* 10 * 1.25 */
+    }
+    .option-text {
+        flex: 1;
+        text-align: left;
+        padding-right: 22.5px; /* 18 * 1.25 */
+    }
+    .score-info {
+        margin-top: 22.5px; /* 18 * 1.25 */
+        font-size: 1.25em; /* 1 * 1.25 */
+        color: #555;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const radios = document.querySelectorAll('input[type="radio"][name="resposta"]');
+        const labels = document.querySelectorAll('.option-radio-label');
+        labels.forEach(label => {
+            label.addEventListener('click', function() {
+                labels.forEach(l => l.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+    });
+</script>
+{% endblock %}
+
+{% block content %}
+    <div class="quiz-header">
+        <div class="question-mark">?</div>
+        <div class="question-text">{{ pergunta.texto }}</div>
+    </div>
+    <form action="/resposta" method="post">
+        <input type="hidden" name="tipo_pergunta" value="{{ pergunta.tipo }}">
+        <input type="hidden" name="resposta_correta" value="{{ pergunta.resposta }}">
+        {% for tema in temas %}
+            <input type="hidden" name="tema" value="{{ tema }}">
+        {% endfor %}
+        <div class="options-grid">
+            {% if pergunta.tipo == 'vf' %}
+                <label class="option-radio-label">
+                    <input type="radio" name="resposta" value="Verdadeiro" required>
+                    <span class="option-label">V</span>
+                    <span class="option-text">Verdadeiro</span>
+                </label>
+                <label class="option-radio-label">
+                    <input type="radio" name="resposta" value="Falso" required>
+                    <span class="option-label">F</span>
+                    <span class="option-text">Falso</span>
+                </label>
+            {% else %}
+                {% set letras = ['A', 'B', 'C', 'D', 'E', 'F'] %}
+                {% for opcao in pergunta.opcoes %}
+                    <label class="option-radio-label">
+                        <input type="radio" name="resposta" value="{{ opcao }}" required>
+                        <span class="option-label">{{ letras[loop.index0] }}</span>
+                        <span class="option-text">{{ opcao }}</span>
+                    </label>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <button class="quiz-btn" type="submit">Confirmar resposta</button>
+    </form>
+    <div class="score-info">
+        Pontuação atual: {{ session.score }}
+    </div>
+   
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado do Quiz</title>
+    <style>
+        body { background: #FFD966; font-family: 'Segoe UI', Arial, sans-serif; }
+        .score-container {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            max-width: 420px;
+            margin: 60px auto;
+            padding: 32px 32px 24px 32px;
+            text-align: center;
+        }
+        .score-title { font-size: 2em; margin-bottom: 16px; }
+        .score-result { font-size: 1.3em; margin-bottom: 24px; }
+        .score-btn {
+            background: #3B82F6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 32px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .score-btn:hover { background: #2563EB; }
+    </style>
+</head>
+<body>
+    <div class="score-container">
+        <div class="score-title">Resultado - {{ nome_modo }}</div>
+        <div class="score-result">
+            {% if passou %}
+                <span style="color:green;">Parabéns! Você passou de nível! 🎉</span>
+            {% else %}
+                <span style="color:red;">Não passou de nível. 😢</span>
+            {% endif %}
+        </div>
+        <p>Acertos: {{ score }} de {{ total }}<br>
+        Mínimo para passar: {{ min_acertos }}</p>
+        <form action="{{ url_for('reiniciar') }}" method="get">
+            <button class="score-btn" type="submit">Voltar a Jogar</button>
+        </form>
+    </div>
+</body>
+</html>

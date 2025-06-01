@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bem-vindo ao Quiz do Mundial</title>
+    <style>
+        body {
+            background: #FFD966;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .quiz-container {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            max-width: 420px;
+            margin: 60px auto;
+            padding: 32px 32px 24px 32px;
+            text-align: center;
+        }
+
+        .quiz-header {
+            margin-bottom: 24px;
+        }
+
+        .quiz-header .icon {
+            font-size: 40px;
+            color: #E53935;
+            margin-bottom: 8px;
+        }
+
+        .quiz-header h1 {
+            font-size: 1.6em;
+            margin: 0 0 8px 0;
+        }
+
+        .quiz-header h2 {
+            font-size: 1.1em;
+            color: #555;
+            margin: 0 0 16px 0;
+        }
+
+        .tema-option {
+            display: flex;
+            align-items: center;
+            background: #F3F4F6;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 12px 18px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+            font-size: 1.1em;
+            font-weight: 500;
+            justify-content: left;
+        }
+
+        .tema-option.selected {
+            border: 2px solid #3B82F6;
+            background: #E0E7FF;
+        }
+
+        .tema-label {
+            margin-left: 0;
+        }
+
+        .quiz-btn {
+            margin-top: 24px;
+            background: #3B82F6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 32px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .quiz-btn:hover {
+            background: #2563EB;
+        }
+
+        /* Esconde o checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Mostra um quadrado customizado */
+        .custom-checkbox {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #bbb;
+            border-radius: 5px;
+            background: #fff;
+            margin-right: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border 0.2s;
+        }
+
+        .tema-option.selected .custom-checkbox {
+            border: 2px solid #3B82F6;
+            background: #3B82F6;
+        }
+
+        .checkmark {
+            display: none;
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        .tema-option.selected .checkmark {
+            display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const options = document.querySelectorAll('.tema-option');
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            options.forEach(opt => {
+                opt.addEventListener('click', function (e) {
+                    // Permite clicar no label inteiro
+                    const checkbox = this.querySelector('input[type="checkbox"]');
+                    if (checkbox.checked) {
+                        checkbox.checked = false;
+                        this.classList.remove('selected');
+                    } else {
+                        // Limita a 3 seleções
+                        const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                        if (checkedCount < 3) {
+                            checkbox.checked = true;
+                            this.classList.add('selected');
+                        }
+                    }
+                });
+            });
+            // Impede selecionar mais de 3
+            checkboxes.forEach(cb => {
+                cb.addEventListener('change', function () {
+                    const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                    if (checkedCount > 3) {
+                        this.checked = false;
+                        this.closest('.tema-option').classList.remove('selected');
+                        alert('Você só pode escolher até 3 temas.');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="icon">❓</div>
+            <h1>Bem-vindo!</h1>
+            <h2>Qual tema você quer jogar?</h2>
+        </div>
+        <form action="{{ url_for('generate_question') }}" method="get">
+            <input type="hidden" name="modo" value="{{ modo }}">
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="jogador">
+                <span class="tema-label">Jogadores</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="tecnico">
+                <span class="tema-label">Treinador</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="estadio">
+                <span class="tema-label">Estádios</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="gol">
+                <span class="tema-label">Golos</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="partida">
+                <span class="tema-label">Jogos Dispotados</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="matching">
+                <span class="tema-label">Correspondencia</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="pais_mundial">
+                <span class="tema-label">País do Mundial</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="jogador_treinador">
+                <span class="tema-label">Jogador/Treinador</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="mais_golos">
+                <span class="tema-label">Quem marcou mais golos?</span>
+            </label>
+            <label class="tema-option">
+                <span class="custom-checkbox"><span class="checkmark">&#10003;</span></span>
+                <input type="checkbox" name="tema" value="vencedor_torneio">
+                <span class="tema-label">Vencedor do Torneio</span>
+            </label>
+            <button class="quiz-btn" type="submit">Começar Quiz</button>
+        </form>
+    </div>
+</body>
+
+</html>

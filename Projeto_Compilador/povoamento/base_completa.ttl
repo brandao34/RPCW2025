@@ -1,0 +1,314 @@
+@prefix : <http://www.semanticweb.org/cid34senhas/ontologies/world_cup#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/cid34senhas/ontologies/world_cup#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#eRepresentadoPor
+<http://www.co-ode.org/ontologies/ont.owl#eRepresentadoPor> rdf:type owl:ObjectProperty ;
+                                                            owl:inverseOf :representaPais .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#eVencedor
+<http://www.co-ode.org/ontologies/ont.owl#eVencedor> rdf:type owl:ObjectProperty ;
+                                                     owl:inverseOf <http://www.co-ode.org/ontologies/ont.owl#venceuTorneio> ;
+                                                     rdfs:domain :Team ;
+                                                     rdfs:range :Tournament .
+
+
+
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#temPartida
+<http://www.co-ode.org/ontologies/ont.owl#temPartida> rdf:type owl:ObjectProperty ;
+                                                      owl:inverseOf :playedInTournament .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#venceuTorneio
+<http://www.co-ode.org/ontologies/ont.owl#venceuTorneio> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#arbitrouPartida
+:arbitrouPartida rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :temArbitro ;
+                 rdfs:domain :Referee ;
+                 rdfs:range :Match .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#awayTeam
+:awayTeam rdf:type owl:ObjectProperty ;
+          rdfs:range :Team .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#fromCountry
+:fromCountry rdf:type owl:ObjectProperty ;
+             rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#homeTeam
+:homeTeam rdf:type owl:ObjectProperty ;
+          rdfs:range :Team .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#hostCountry
+:hostCountry rdf:type owl:ObjectProperty ;
+             rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#locatedInCity
+:locatedInCity rdf:type owl:ObjectProperty ;
+               rdfs:range :City .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#locatedInCountry
+:locatedInCountry rdf:type owl:ObjectProperty ;
+                  rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#participaEmTorneio
+:participaEmTorneio rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Team ;
+                    rdfs:range :Tournament .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#pertenceaEquipa
+:pertenceaEquipa rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :temJogador ;
+                 rdfs:domain :Player ;
+                 rdfs:range :Team .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#playedAtStadium
+:playedAtStadium rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Match ;
+                 rdfs:range :Stadium .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#playedInTournament
+:playedInTournament rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Match ;
+                    rdfs:range :Tournament .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#representaPais
+:representaPais rdf:type owl:ObjectProperty ;
+                rdfs:domain :Team ;
+                rdfs:range :Country .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#temArbitro
+:temArbitro rdf:type owl:ObjectProperty ;
+            rdfs:domain :Match ;
+            rdfs:range :Referee .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#temJogador
+:temJogador rdf:type owl:ObjectProperty ;
+            rdfs:domain :Team ;
+            rdfs:range :Player .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#temTreinador
+:temTreinador rdf:type owl:ObjectProperty ;
+              owl:inverseOf :treinaEquipa ;
+              rdfs:domain :Team ;
+              rdfs:range :Coach .
+
+###  http://www.co-ode.org/ontologies/ont.owl#goloMarcadoPor
+:goloMarcadoPor rdf:type owl:ObjectProperty ;
+            owl:inverseOf :marcouGoloEm;
+            rdfs:domain :Match ;
+            rdfs:range :Player .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#marcouGoloEm
+:marcouGoloEm rdf:type owl:ObjectProperty ;
+            rdfs:domain :Player ;
+            rdfs:range :Match .
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#temVencedor
+:temVencedor rdf:type owl:ObjectProperty ;
+             rdfs:domain :Tournament ;
+             rdfs:range :Team .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#treinaEquipa
+:treinaEquipa rdf:type owl:ObjectProperty ;
+              rdfs:domain :Coach ;
+              rdfs:range :Team .
+
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#awayTeamScore
+:awayTeamScore rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#birthDate
+:birthDate rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#capacity
+:capacity rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#countTeams
+:countTeams rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#countTournaments
+:countTournaments rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#global_id
+:global_id rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#groupName
+:groupName rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#homeTeamScore
+:homeTeamScore rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#listTournaments
+:listTournaments rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#matchDate
+:matchDate rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#matchTime
+:matchTime rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#score
+:score rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#sex
+:sex rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#stageName
+:stageName rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#teamCode
+:teamCode rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#teamType
+:teamType rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#wikipediaLink
+:wikipediaLink rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#City
+:City rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Coach
+:Coach rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Country
+:Country rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Match
+:Match rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Player
+:Player rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Referee
+:Referee rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Stadium
+:Stadium rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Team
+:Team rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/cid34senhas/ontologies/world_cup#Tournament
+:Tournament rdf:type owl:Class .

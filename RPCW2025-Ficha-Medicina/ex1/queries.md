@@ -32,6 +32,7 @@ R: 17
 
 ## Query 4: 
 
+```
 
 PREFIX : <http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -39,13 +40,14 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT ?agricultor WHERE {
   ?agricultor :Cultiva :Tomate .
 }
+``` 
 
 R: Carlos 
 
 
 ## Query 5 
 
-
+```
 PREFIX : <http://www.semanticweb.org/cid34senhas/ontologies/2025/Historia_inferida#>
 PREFIX historia: <http://www.semanticweb.org/cid34senhas/ontologies/2025/historia#>
 
@@ -54,5 +56,6 @@ SELECT DISTINCT ?empregador WHERE {
   ?empregrador :temTrabalhador ?empregador. 
                
 }
+``` 
 
 R: Joao 

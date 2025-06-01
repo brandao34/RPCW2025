@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Matching - Quiz do Mundial{% endblock %}
+
+{% block extra_css %}
+<style>
+    .question-mark {
+        font-size: 90px;
+        color: #003049;
+        text-shadow: 0 0 24px #ffb703, 0 0 8px #ffb703;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .question-text {
+        font-size: 1.3em;
+        color: #22223b;
+        margin: 18px 0 32px 0;
+        font-weight: 600;
+    }
+    .matching-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-bottom: 24px;
+        justify-items: stretch;
+    }
+    .matching-row {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        margin-bottom: 14px;
+        padding: 10px 18px;
+        font-size: 1.2em;
+        justify-content: space-between;
+    }
+    .matching-label {
+        font-weight: 500;
+        color: #003049;
+        margin-right: 18px;
+        min-width: 120px;
+        text-align: left;
+    }
+    .matching-select {
+        font-size: 1.1em;
+        border-radius: 8px;
+        border: 1px solid #bbb;
+        padding: 6px 18px;
+        background: #f3f4f6;
+        color: #003049;
+        min-width: 120px;
+    }
+    .quiz-btn {
+        margin-top: 18px;
+    }
+    .score-info {
+        margin-top: 22.5px;
+        font-size: 1.25em;
+        color: #555;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="quiz-header">
+        <div class="question-mark">?</div>
+        <div class="question-text">{{ pergunta.texto }}</div>
+    </div>
+    <form action="/resposta" method="post">
+        <input type="hidden" name="tipo_pergunta" value="{{ pergunta.tipo }}">
+        {% for jogador in pergunta.itens %}
+            <div class="matching-row">
+                <span class="matching-label">{{ jogador }}</span>
+                <select class="matching-select" name="resposta_{{ loop.index0 }}" required>
+                    {% for pos in pergunta.opcoes %}
+                        <option value="{{ pos }}">{{ pos }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% endfor %}
+        <input type="hidden" name="resposta_correta" value="{{ pergunta.respostas|join(',') }}">
+        {% for tema in temas %}
+            <input type="hidden" name="tema" value="{{ tema }}">
+        {% endfor %}
+        <button class="quiz-btn" type="submit">Enviar Respostas</button>
+    </form>
+    <div class="score-info">
+        Pontuação atual: {{ session.score }}
+    </div>
+{% endblock %}
