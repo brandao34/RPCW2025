@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interrogar a Ontologia - {{ filename }}</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <div class="w3-card-4">
+
+      <header class="w3-container w3-blue">
+        <h1>>Interrogar a Ontologia - {{ filename }} ({{ triples }} triplos)</h1>
+      </header>
+      
+      <div class="w3-container">
+          <!-- Query Form -->
+      <form action="/query/{{ filename }}" method="POST" class="w3-container w3-margin">
+        <label for="query">Introduza a query SPARQL:</label>
+        <textarea name="query" id="query" rows="4" cols="50" class="w3-input w3-border" required></textarea><br><br>
+        <input type="submit" value="Executar Query" class="w3-button w3-blue">
+      </form>
+
+      <header class="w3-container w3-blue">
+        <h2>Resultados </h2>
+      </header>
+      {% if query_results %}
+
+      <div class="w3-container">
+
+      <table class="w3-table-all">
+          <thead>
+            <tr class="w3-light-grey">
+              {% for v in query_results.vars %}
+                  <th>{{ v }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+              {% for result in query_results %}
+              <tr>
+                  {% for var in query_results.vars %}
+                      <td>{{ result[var] }}</td>
+                  {% endfor %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+        <footer class="w3-container w3-blue">
+          <h5><a href="/" class="w3-button w3-blue">Voltar à lista de ontologias</a></h5>
+        </footer>
+        
+        </div>
+
+  </body>
+</html>

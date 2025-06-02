@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ info['ontologia'] }}</title>
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
+  </head>
+  <body>
+    <div class="w3-card-4">
+
+      <header class="w3-container w3-blue">
+        <h1>{{ info['ontologia'] }} ({{ info['triples'] }} triplos)</h1>
+      </header>
+      
+      <div class="w3-container">
+        <table class="w3-table-all">
+          <tbody>
+              <tr>
+                <td>Classes</td>
+                <td>{{ info.contadores['classes']}}</td>
+                <td>
+                  <ul class="w3-ul">
+                    {% for c in info.stats['classes']%}
+                      <li>{{ c }}</li>
+                    {% endfor %}
+                  </ul>
+                </td> 
+              </tr>
+              <tr>
+                <td>Object Properties</td>
+                <td>{{ info.contadores['oprops']}}</td>
+                <td>
+                  <ul class="w3-ul">
+                    {% for o in info.stats['oprops']%}
+                      <li>{{ o }}</li>
+                    {% endfor %}
+                  </ul>
+                </td> 
+              </tr>
+              <tr>
+                <td>Data Properties</td>
+                <td>{{ info.contadores['dprops']}}</td>
+                <td>
+                  <ul class="w3-ul">
+                    {% for d in info.stats['dprops']%}
+                      <li>{{ d }}</li>
+                    {% endfor %}
+                  </ul>
+                </td> 
+              </tr>
+              <tr>
+                <td>Individuals</td>
+                <td>{{ info.contadores['indivs']}}</td>
+                <td>
+                  <ul class="w3-ul">
+                    {% for i in info.stats['indivs']%}
+                      <li>{{ i }}</li>
+                    {% endfor %}
+                  </ul>
+                </td> 
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <footer class="w3-container w3-blue">
+        <h5><a href="/" class="w3-button w3-blue">Voltar à lista de ontologias</a></h5>
+      </footer>
+      
+      </div>
+  </body>
+</html>

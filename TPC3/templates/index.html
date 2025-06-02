@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWL File List</title>
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
+  </head>
+  <body>
+    <div class="w3-container">
+      <h2 class="w3-blue w3-padding">OWL Files in Folder</h2>
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>#</th>
+            <th>File Name</th>
+            <th>Tamanho (Bytes)</th>
+            <th>Operacoes </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for index, file, size in files %}
+            <tr>
+              <td>{{ index }}</td>
+              <td>{{ file }}</td>
+              <td>{{ size }}</td> 
+              <td>
+                <a class="w3-button w3-indigo" href="/files/{{ file }}">Load</a>
+                <a class="w3-button w3-indigo" href="/query/{{ file }}">Query</a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <footer >
+          <h5> Ontologia app </h5>
+      </footer>
+    </div>
+  </body>
+</html>
